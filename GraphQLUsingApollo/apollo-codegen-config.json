@@ -1,0 +1,28 @@
+{
+  "schemaNamespace" : "CodegenConfig",
+  "input" : {
+    "operationSearchPaths" : [
+      "GraphQLUsingApollo/API/GraphQL/Requests/*.graphql"
+    ],
+    "schemaSearchPaths" : [
+      "GraphQLUsingApollo/API/GraphQL/Schemas/*.graphqls"
+    ]
+  },
+  "output" : {
+    "testMocks" : {
+      "none" : {
+      }
+    },
+    "schemaTypes" : {
+      "path" : "./CodegenConfig",
+      "moduleType" : {
+        "swiftPackageManager" : {
+        }
+      }
+    },
+    "operations" : {
+      "inSchemaModule" : {
+      }
+    }
+  }
+}
