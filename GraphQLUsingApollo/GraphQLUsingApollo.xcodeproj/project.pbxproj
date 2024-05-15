@@ -18,6 +18,8 @@
 		264567CF2BE92EA20009D704 /* LaunchDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 264567CE2BE92EA20009D704 /* LaunchDetailsViewModel.swift */; };
 		264567D22BE932490009D704 /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = 264567D12BE932490009D704 /* Apollo */; };
 		264567D42BE932DC0009D704 /* LaunchDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 264567D32BE932DC0009D704 /* LaunchDetailsView.swift */; };
+		26FDD3832BF4D2B3004C1FD2 /* AuthorizationInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FDD3822BF4D2B3004C1FD2 /* AuthorizationInterceptor.swift */; };
+		26FDD3852BF4D366004C1FD2 /* NetworkInterceptorProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FDD3842BF4D366004C1FD2 /* NetworkInterceptorProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +37,10 @@
 		264567CC2BE92D7C0009D704 /* LaunchDetails.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = LaunchDetails.graphql; sourceTree = "<group>"; };
 		264567CE2BE92EA20009D704 /* LaunchDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchDetailsViewModel.swift; sourceTree = "<group>"; };
 		264567D32BE932DC0009D704 /* LaunchDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchDetailsView.swift; sourceTree = "<group>"; };
+		26FDD3822BF4D2B3004C1FD2 /* AuthorizationInterceptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationInterceptor.swift; sourceTree = "<group>"; };
+		26FDD3842BF4D366004C1FD2 /* NetworkInterceptorProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkInterceptorProvider.swift; sourceTree = "<group>"; };
+		26FDD3862BF4D419004C1FD2 /* BookTrip.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = BookTrip.graphql; sourceTree = "<group>"; };
+		26FDD3872BF4D43F004C1FD2 /* CancelTrip.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = CancelTrip.graphql; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +126,8 @@
 			children = (
 				264567AA2BE8C08A0009D704 /* LaunchList.graphql */,
 				264567CC2BE92D7C0009D704 /* LaunchDetails.graphql */,
+				26FDD3862BF4D419004C1FD2 /* BookTrip.graphql */,
+				26FDD3872BF4D43F004C1FD2 /* CancelTrip.graphql */,
 			);
 			path = Requests;
 			sourceTree = "<group>";
@@ -128,6 +136,8 @@
 			isa = PBXGroup;
 			children = (
 				264567B12BE8D0E90009D704 /* GraphQLNetworkProvider.swift */,
+				26FDD3822BF4D2B3004C1FD2 /* AuthorizationInterceptor.swift */,
+				26FDD3842BF4D366004C1FD2 /* NetworkInterceptorProvider.swift */,
 			);
 			path = Providers;
 			sourceTree = "<group>";
@@ -238,10 +248,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				264567B22BE8D0E90009D704 /* GraphQLNetworkProvider.swift in Sources */,
+				26FDD3832BF4D2B3004C1FD2 /* AuthorizationInterceptor.swift in Sources */,
 				264567CB2BE929770009D704 /* LaunchListView.swift in Sources */,
 				264567D42BE932DC0009D704 /* LaunchDetailsView.swift in Sources */,
 				264567912BE8B7E80009D704 /* GraphQLUsingApolloApp.swift in Sources */,
 				264567CF2BE92EA20009D704 /* LaunchDetailsViewModel.swift in Sources */,
+				26FDD3852BF4D366004C1FD2 /* NetworkInterceptorProvider.swift in Sources */,
 				264567C92BE928E00009D704 /* LaunchListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -373,10 +385,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"GraphQLUsingApollo/Preview Content\"";
-				DEVELOPMENT_TEAM = H88KGC5SCC;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = GraphQLUsingApollo/Info.plist;
@@ -392,6 +405,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ayairshaid.GraphQLUsingApollo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -403,10 +417,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"GraphQLUsingApollo/Preview Content\"";
-				DEVELOPMENT_TEAM = H88KGC5SCC;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = GraphQLUsingApollo/Info.plist;
@@ -422,6 +437,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ayairshaid.GraphQLUsingApollo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

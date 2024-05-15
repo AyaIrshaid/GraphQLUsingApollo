@@ -24,7 +24,24 @@ struct LaunchDetailsView: View {
             }
             Text(viewModel.launch?.mission?.name ?? "Mission name")
             Text(viewModel.launch?.site ?? "")
+
+            Button {
+                viewModel.bookOrCancel()
+            } label: {
+                Text(viewModel.launch?.isBooked ?? false ? "Cancel" : "Book")
+            }
+            .frame(width: 200, height: 50)
+            .foregroundColor(.white)
+            .background(viewModel.launch?.isBooked ?? false ? .blue : .green)
+            .cornerRadius(8)
+
             Spacer()
+        }
+        .task {
+            viewModel.getLaunchDetails()
+        }
+        .alert(viewModel.alertMessage, isPresented: $viewModel.showAlert) {
+            Button("OK", role: .cancel) { viewModel.resetAlert() }
         }
     }
 }

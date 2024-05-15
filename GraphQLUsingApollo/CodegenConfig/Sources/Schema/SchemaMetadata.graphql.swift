@@ -26,6 +26,8 @@ public enum SchemaMetadata: ApolloAPI.SchemaMetadata {
     case "Launch": return CodegenConfig.Objects.Launch
     case "Mission": return CodegenConfig.Objects.Mission
     case "Rocket": return CodegenConfig.Objects.Rocket
+    case "Mutation": return CodegenConfig.Objects.Mutation
+    case "TripUpdateResponse": return CodegenConfig.Objects.TripUpdateResponse
     case "LaunchConnection": return CodegenConfig.Objects.LaunchConnection
     default: return nil
     }
